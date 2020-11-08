@@ -1,0 +1,8 @@
+# Virtual env binaries/libraries/*
+venv/*
+
+# Oauth details
+credentials.json
+
+# Store for access/refresh tokens
+*.pickle
