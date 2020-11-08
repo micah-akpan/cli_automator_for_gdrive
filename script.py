@@ -1,5 +1,7 @@
 #!venv/bin/python
 
+# The auth code was adapted from the quickstart example here: https://developers.google.com/drive/api/v3/quickstart/python?authuser=1
+
 from __future__ import print_function
 import pickle
 import os.path
