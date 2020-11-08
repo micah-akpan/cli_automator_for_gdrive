@@ -10,7 +10,7 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 
-# If modifying these scopes, delete the file token.pickle.
+# If modifying these scopes, delete the file *.pickle.
 SCOPES = ['https://www.googleapis.com/auth/drive']
 
 
@@ -105,9 +105,10 @@ def create_doc_template(gdrive_service, file_to_be_copied_name: str, folder_name
 
 def main():
     filename = ''  # this and the folder name, if specified will come from the command line
+    folder_name = ''
     gdrive_service = get_request_service()
     copy_msg = create_doc_template(
-        gdrive_service, '[Lambda] Labs Web Final Template', 'John Wick 3')
+        gdrive_service, filename, folder_name)
 
     print(copy_msg)
 
